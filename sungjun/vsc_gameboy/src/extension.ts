@@ -2,6 +2,7 @@ import * as vscode from 'vscode';
 import * as path from 'path';
 import { GameProvider } from './gameProvider';
 import { numberGameWeb } from './game/numberGame/numbergameWeb';
+import { TetrisWeb } from './game/tetris/tetrisWeb';
 
 // 확장 프로그램이 활성화될 때 호출되는 메서드
 export function activate(context: vscode.ExtensionContext) {
@@ -21,7 +22,10 @@ export function activate(context: vscode.ExtensionContext) {
       const filePath = path.join(context.extensionPath, '/src/game/cliGame/cliGame.js');
       terminal.sendText(`node ${filePath}`);
       terminal.show();
-    } else{
+    } else if (gameId === 'tetris') {
+      TetrisWeb.createOrShow(context);
+
+    } else if (gameId === 'numberGame') {
       numberGameWeb(context); // numbergameWeb.ts에서 export된 함수
     }
 

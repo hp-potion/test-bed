@@ -21,8 +21,8 @@ export class GameProvider implements vscode.TreeDataProvider<GameItem> {
   private getGames(): GameItem[] {
     // 예시를 위한 더미 데이터
     return [
-      new GameItem('i am 감자에요.', vscode.TreeItemCollapsibleState.None,'game1'),
-      new GameItem('말하는 감자에요.', vscode.TreeItemCollapsibleState.None,'game2'),
+      new GameItem('tetris.', vscode.TreeItemCollapsibleState.None,'tetris'),
+      new GameItem('numberGame', vscode.TreeItemCollapsibleState.None,'numberGame'),
       new GameItem('cliGame', vscode.TreeItemCollapsibleState.None,'cliGame')
     ];
   }
