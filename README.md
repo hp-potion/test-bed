@@ -1,26 +1,35 @@
 # MiniGames for VSC 
 
-## Overview
-MiniGames for VSC is an innovative extension that transforms your Visual Studio Code environment into a playground for mini-games. This extension allows developers to easily contribute and integrate JavaScript-based games into VSC, providing a fun and interactive way to learn and take breaks during coding sessions.
+<div align="center">
+  <img src="https://github.com/hp-potion/test-bed/blob/main/mainImage.png?raw=true" width="300" >
+</div>
 
-### Features
-- **Game Integration in VSC:**  Play engaging mini-games directly in Visual Studio Code, using its various views including the webview and terminal.
-- **Developer-Friendly:** Offers an easy way for developers to contribute their JavaScript games, fostering a community of educational and fun coding experiences.
-- **Game List and Selection:** Features a convenient game list on the left tab, allowing users to browse and select games to play.
+## Overview
+VCS Mini Game is an innovative extension that transforms the Visual Studio Code environment into a mini-game arena. This allows developers to easily contribute and integrate JavaScript-based games into VSC.
+
+## Features
+- **In-VSC Game Integration:** Provides mini-games that can be enjoyed in various views of VSC, including web views and terminals.
+- **Developer-Friendly:** Offers a way for developers to easily contribute their JavaScript games.
+- **Game List and Selection:** Provides a convenient game list in the VSC sidebar for users to browse and select games.
+
 
 ## Tech Stack
-This project is built using a range of modern technologies including:
-- Node.js: For backend development.
-- TypeScript: Providing type safety and enhancing code quality.
-- Visual Studio Code API: Enabling integration and functionality within the VSC environment.
+This project conforms to the following specifications:
+- TypeScript (5.2.2): Ensures type safety and improves code quality.
+- Visual Studio Code API (1.84.0): [Integrates and extends features within VSC](https://code.visualstudio.com/api).
 
 ## License 
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) for more details.
+This project is licensed under the Apache License 2.0. For more details, see [License](LICENSE).
 
 ## Contributing
-Learn about contribution [here](CONTRIBUTING.md)
+For more information on contributing, please see [here](CONTRIBUTING.md).
 
-This project exists thanks to all the people who contribute:
+This project was made possible with the help of all contributors.
 
-## Contact 
-Instead, please send an email to test@test.com
+## Contact
+| Name   | GitHub                                       | Email                |
+|--------|----------------------------------------------|----------------------|
+| junman95 | [GitHub](https://github.com/junman95) | junman9595@gmail.com |
+| XPECTER | [GitHub](https://github.com/XPECTER) | menistream@gmail.com |
+| smshack | [GitHub](https://github.com/smshack) | 5432tat@naver.com    |
+| Ooyd    | [GitHub](https://github.com/Ooyd) | chang0467@gmail.com  |
