@@ -1,7 +1,8 @@
 {
-  "name": "gameboy-dev",
-  "displayName": "gameboy_dev",
+  "name": "vsc-gameboy",
+  "displayName": "vsc-gameboy",
   "description": "blank",
+  "publisher": "hp-potion",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.84.0"

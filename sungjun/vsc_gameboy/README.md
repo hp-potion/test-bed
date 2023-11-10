@@ -14,11 +14,12 @@ This project is built using a range of modern technologies including:
 - TypeScript: Providing type safety and enhancing code quality.
 - Visual Studio Code API: Enabling integration and functionality within the VSC environment.
 
+
 ## License 
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) for more details.
+This project is licensed under the Apache License 2.0. See the [LICENSE](https://github.com/hp-potion/test-bed/blob/main/LICENSE) for more details.
 
 ## Contributing
-Learn about contribution [here](CONTRIBUTING.md)
+Learn about contribution [here](https://github.com/hp-potion/test-bed/blob/main/docs/CONTRIBUTING.md)
 
 This project exists thanks to all the people who contribute:
 
