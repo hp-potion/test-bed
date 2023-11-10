@@ -15,8 +15,8 @@ body:
         - Game
         - Platform
         - Environment
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     attributes:
       label: Link to the code that reproduces this issue
