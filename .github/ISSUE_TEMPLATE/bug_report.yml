@@ -23,6 +23,12 @@ body:
       description: |
         A link to a **public** file of your repository
       placeholder: 'https://github.com/your/repository/path'
+  - type: input
+    attributes:
+      label: Attach image of issue
+      description: |
+        link to issue image(s)
+      placeholder: 'https://image.com/issue/image/1'
     validations:
       required: true
   - type: textarea
@@ -39,27 +45,14 @@ body:
     attributes:
       label: Current vs. Expected behavior
       description: A clear and concise description of what the bug is, and what you expected to happen.
-      placeholder: 'Following the steps from the previous section, I expected A to happen, but I observed B instead'
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Provide environment information
-      description: |
-        Please provide your [VSC version](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version)
-        and your packges installed
-      render: bash
       placeholder: |
-        VSC version : 1.50
-        installed Packages :
-          Node: 20.0.0
-          npm: 9.5.1
-    validations:
-      required: true
+        'Not Mandatory'
+        'Following the steps from the previous section, I expected A to happen, but I observed B instead'
   - type: textarea
     attributes:
       label: Additional context
       description: |
         Any extra information that might help us investigate.
       placeholder: |
+        'Not Mandatory'
         I am facing issue from space-invader game when I restart the game before finishing the game.
