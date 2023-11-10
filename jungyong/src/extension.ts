@@ -1,45 +1,24 @@
 import * as vscode from 'vscode';
 import * as path from 'path';
 import * as fs from 'fs';
+import { getWebViewContent } from './tetris/view';
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('JYExtension.tetris', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'JYExtension.tetris',
-        'TETRIS',
-        vscode.ViewColumn.One,
-        {
-          enableScripts: true,
-          localResourceRoots: [
-            vscode.Uri.file(path.join(context.extensionPath, 'style')),
-          ],
-        }
-      );
+  let disposable = vscode.commands.registerCommand('JYExtension.tetris', () => {
+    const panel = vscode.window.createWebviewPanel(
+      'tetris',
+      'Tetris Game',
+      vscode.ViewColumn.One,
+      {
+        enableScripts: true,
+      }
+    );
 
-      const tetrisHtmlPath = vscode.Uri.file(
-        path.join(context.extensionPath, 'src', 'tetris', 'index.html')
-      );
+    panel.webview.options
+    panel.webview.html = getWebViewContent(panel.webview, context);
+  });
 
-      fs.readFile(tetrisHtmlPath.fsPath, 'utf8', (err, htmlContent) => {
-        if (err) {
-          vscode.window.showErrorMessage('Error loading Tetris HTML');
-          return;
-        }
-
-        panel.webview.html = htmlContent.replace(
-          /src\s*=\s*"(.+?)"/g,
-          (match, src) => {
-            const filePath = vscode.Uri.file(
-              path.join(tetrisHtmlPath.fsPath, '..', '..', src)
-            );
-            const webviewUri = panel.webview.asWebviewUri(filePath);
-            return `src=${webviewUri}`;
-          }
-        );
-      });
-    })
-  );
+  context.subscriptions.push(disposable);
 }
 
 export function deactivate() {}

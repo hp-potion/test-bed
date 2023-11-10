@@ -1,33 +1,33 @@
 # Pull Request Template
 
-## PR 종류
+## Type of PR
 
 - [ ] Feature - Platform
 - [ ] Feature - Game
 - [ ] Fix - Bug
 
-## PR 설명
+## Description of PR
 
-<!-- PR에 대한 간략한 설명을 기입하세요. -->
+<!-- Provide a brief description of the PR. -->
 
-## 변경 사항
+## Changes Made
 
-<!-- 변경된 사항에 대해 자세히 기술하세요. -->
+<!-- Detail the changes made in this PR. -->
 
-## 테스트 방법
+## Testing Method
 
-<!-- 해당 PR에 대한 테스트 방법을 기술하세요. -->
+<!-- Describe how this PR can be tested. -->
 
-## 관련 이슈
+## Related Issues
 
-<!-- 관련 이슈가 있다면 링크를 첨부하세요. -->
+<!-- If there are related issues, link them here. -->
 
-## 체크리스트
+## Checklist
 
-- [ ] 코드 리뷰 준비 완료 (Assignees 지정, Labels 설정 등)
-- [ ] 변경 사항이 기존 기능에 영향을 주지 않는지 확인
-- [ ] 새로 추가된 기능에 대한 문서화 완료
-- [ ] 모든 유닛 테스트 통과
-- [ ] 테스트 환경에서의 테스트 완료
-- [ ] 관련 이슈에 PR 링크 첨부
-- [ ] 관련 팀 또는 담당자와의 충분한 소통 후 PR 제출
+- [ ] Prepared for code review (Assignees set, Labels applied, etc.)
+- [ ] Checked that changes do not negatively affect existing features
+- [ ] Documentation completed for new features
+- [ ] All unit tests passed
+- [ ] Testing in the test environment completed
+- [ ] Linked this PR in the related issue
+- [ ] Communicated sufficiently with the relevant team or person before submitting PR
