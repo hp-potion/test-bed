@@ -22,7 +22,7 @@ This project conforms to the following specifications:
 This project is licensed under the Apache License 2.0. For more details, see [License](LICENSE).
 
 ## Contributing
-For more information on contributing, please see [here](CONTRIBUTING.md).
+For more information on contributing, please see [here](docs/CONTRIBUTING.md).
 
 This project was made possible with the help of all contributors.
 
